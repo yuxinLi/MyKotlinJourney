@@ -7,6 +7,49 @@ package com.example.mykotlinjourney
  */
 
 
+
+
+
+
+
+class CCC private constructor(a:Int){}
+
+
+open class Outer{
+    private val a = 1
+    protected open val b = 2
+    open internal val c = 3
+    open val d = 4
+
+
+    protected class Nested{
+        public val e:Int = 5
+    }
+}
+
+class Unrelated(o: Outer){
+    //     val ua = o.a
+// 	val ub = o.b
+    val uc = o.c
+    val ud = o.d
+
+}
+
+class SubClass :Outer(){
+    //    override val a = 2
+    override val b = 2
+    override val c = 3
+    override val d = 3
+
+    //     val aa = super.a
+    val bb = super.b
+    val cc = super.c
+    val dd = super.d
+}
+
+
+
+
 interface AA{
     fun foo(){ println("AA")}
 }
