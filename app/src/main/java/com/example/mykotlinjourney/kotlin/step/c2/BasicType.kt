@@ -49,6 +49,10 @@ fun main(args: Array<String>) {
 
     println("------ max min end-----")
 
+    println(maxByte)
+    println(minByte)
+
+
 }
 
 
