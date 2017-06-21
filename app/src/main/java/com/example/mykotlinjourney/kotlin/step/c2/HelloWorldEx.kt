@@ -24,6 +24,7 @@ fun main(args: Array<String>) {
     println("hello world from char array: " + String(helloworldCharArray))
     println("class name hello world: " + helloworld::class.java.simpleName)
     println("class name hello world: " + helloworld::class.java.name)
+    println("class name hello world: " + String.javaClass.simpleName)
 
     println("part of the class name of HelloWorld: "
             + helloworld::class.java.simpleName.slice(0 until 5)) // [0, 5)
@@ -33,6 +34,8 @@ fun main(args: Array<String>) {
 
     println("the length of hello world is : " + helloworldLengh)
     println("the length of hello world is (long): " + helloworldLenghLong)
+
+
 
 }
 
